@@ -1,5 +1,3 @@
-from random import randint
-
 def quick_Sort(nums, low, high):
     yield ("current", low, high)
     if low >= high:
@@ -25,9 +23,3 @@ def quick_Sort(nums, low, high):
     yield from quick_Sort(nums, low, i - 1)
     yield ("right_partition", i + 1, high)
     yield from quick_Sort(nums, i + 1, high)
-
-
-nums = [randint(1, 99) for _ in range(5)]
-results = quick_Sort(nums, 0, len(nums) - 1)
-for result in results:
-    print(result)
