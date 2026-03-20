@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sorting Algorithm Visualizer
 
 An educational Python application that visualizes classic sorting algorithms step-by-step in either a command-line interface or a graphical interface. The project is designed to make sorting behavior observable, not just executable.
@@ -235,3 +236,6 @@ Contribution guidelines:
 
 This project is licensed under the MIT License. See `LICENSE` for details.
 
+=======
+# sorting-algorithm-visualizer
+>>>>>>> 4717747ccdfaa3536bf8d7e20ffafa94ce18f0d7
