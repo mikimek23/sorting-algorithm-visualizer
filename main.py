@@ -1,6 +1,7 @@
 import argparse
 from random import randint
 from algorithms.quick_sort import quick_Sort
+from visualizer.cli import cli_visualizer
 default_data = [randint(1, 100) for _ in range(5)]
 parser = argparse.ArgumentParser(
     description="Visualize sorting algorithms step-by-step in CLI or GUI mode.",
@@ -48,8 +49,7 @@ algorithms = {
 selected_algorithm = algorithms[algorithm]
 generator = selected_algorithm(data, 0, len(data)-1)
 if mode == "cli":
-    for result in generator:
-        print(result)
+    cli_visualizer(generator, data)
 
 else:
     print("coming soon")
